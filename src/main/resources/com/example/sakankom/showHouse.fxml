@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="180.0" style="-fx-background-radius: 10;" stylesheets="@../../../OwnerPage.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sakankom.ShowHouseHandler">
+    <children>
+        <ImageView fx:id="houseImage" fitHeight="186.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../photos/a4.jpeg" />
+            </image>
+        </ImageView>
+        <VBox fx:id="labels" prefHeight="21.0" prefWidth="160.0" spacing="2.0">
+            <children>
+                <Label fx:id="houseName" prefHeight="35.0" prefWidth="160.0" text="House 223433">
+                    <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="houseRes" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="160.0" text="Resedence 22">
+                    <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+      <MFXButton fx:id="btnShow" prefHeight="0.0" prefWidth="160.0" styleClass="showHouses" stylesheets="@../../../OwnerPage.css" text="Show more" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </MFXButton>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <styleClass>
+        <String fx:value="white-background" />
+        <String fx:value="shadow" />
+    </styleClass>
+</VBox>

@@ -1,0 +1,53 @@
+
+.white-background{
+    -fx-background-color:#fff;
+
+}
+/*.round-layout{*/
+/*    -fx-border-radius: 50;*/
+/*    -fx-border-color: #D7D7D7;*/
+/*}*/
+.sidebar{
+    -fx-background-color: rgb(58, 69, 88);
+}
+.showHouses{
+    -fx-background-color: rgb(58, 69, 88);
+}
+.dashboard-text{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #ffffff;
+}
+
+.search {
+    -fx-font-family: 'Comfortaa';
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+.btns{
+    -fx-background-color: transparent;
+    -fx-font-size: 20px;
+    -fx-spacing: 10px;
+    -fx-text-fill: white;
+}
+.btnProfile:hover{
+    -fx-background-color: #323c4d;
+}
+.content{
+    -fx-background-color: #b2bccd
+;
+}
+.selected{
+    -fx-background-color: #b2bccd;
+    -fx-text-fill: black;
+}
+.mouse-moved:hover{
+    -fx-background-color: #323c4d;
+    -fx-text-fill: white;
+}
+.transparent{
+    -fx-background-color: transparent;
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 10);
+}

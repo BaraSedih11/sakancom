@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<MFXScrollPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1039.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sakankom.FurnitureHandler">
+   <content>
+      <VBox prefHeight="695.0" prefWidth="1021.0">
+         <children>
+            <AnchorPane prefHeight="97.0" prefWidth="1021.0">
+               <children>
+                  <Label layoutX="29.0" layoutY="28.0" prefHeight="46.0" prefWidth="187.0" stylesheets="@../../../fontstyle.css" text="Furniture" textFill="#300e80" />
+                  <MFXButton fx:id="addBtn" layoutX="827.0" layoutY="37.0" onAction="#addFurniture" prefHeight="32.0" prefWidth="95.0" style="-fx-background-color: #300e80; -fx-cursor: hand;" text="Add new" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </MFXButton>
+               </children>
+            </AnchorPane>
+            <VBox fx:id="container" prefHeight="200.0" prefWidth="100.0" />
+         </children>
+      </VBox>
+   </content>
+</MFXScrollPane>

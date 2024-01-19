@@ -1,0 +1,13 @@
+.hbox {
+    -fx-background-color: #300e80;
+    -fx-border-color: #300e80;
+    -fx-border-width: 3px;
+    -fx-padding: 10px 0px 10px 20px;
+    -fx-border-insets: 10px;
+    -fx-background-insets: 10px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.l1, .l2,.l3 ,.l4,.l5,.l6 {
+    -fx-text-fill: white;
+}

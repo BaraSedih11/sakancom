@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<MFXScrollPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1039.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sakankom.CurrentHousesHandler">
+   <content>
+      <VBox prefHeight="200.0" prefWidth="1030.0">
+         <children>
+            <Label prefHeight="66.0" prefWidth="332.0" stylesheets="@../../../fontstyle.css" text="Current Offers" textFill="#300e80">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <padding>
+                  <Insets bottom="40.0" left="30.0" top="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <VBox fx:id="container" prefHeight="200.0" prefWidth="1030.0" />
+         </children>
+      </VBox>
+   </content>
+</MFXScrollPane>

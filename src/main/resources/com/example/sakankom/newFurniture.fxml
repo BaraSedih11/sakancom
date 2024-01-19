@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="536.0" prefWidth="517.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sakankom.NewFurnitureHandler">
+   <children>
+      <Label layoutX="86.0" layoutY="28.0" stylesheets="@../../../fontstyle.css" text="Sell your furniture" textFill="#300e80" />
+      <Label layoutX="117.0" layoutY="139.0" prefHeight="25.0" prefWidth="95.0" text="Piece Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="uname" animated="false" borderGap="0.0" floatMode="DISABLED" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="113.0" layoutY="164.0" prefHeight="40.0" prefWidth="291.0" />
+      <Label layoutX="117.0" layoutY="224.0" prefHeight="25.0" prefWidth="95.0" text="Price">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="uprice" animated="false" borderGap="0.0" floatMode="DISABLED" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="113.0" layoutY="249.0" prefHeight="40.0" prefWidth="291.0" />
+      <Label layoutX="117.0" layoutY="313.0" prefHeight="25.0" prefWidth="95.0" text="Description">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="udescription" animated="false" borderGap="0.0" floatMode="DISABLED" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="113.0" layoutY="338.0" prefHeight="40.0" prefWidth="291.0" />
+      <MFXButton fx:id="sellBtn" layoutX="113.0" layoutY="409.0" onAction="#sellItem" prefHeight="40.0" prefWidth="291.0" style="-fx-background-color: #300e80; -fx-cursor: hand;" text="Sell" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </MFXButton>
+   </children>
+</AnchorPane>

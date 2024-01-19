@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url('fonts/Comfortaa-Bold.ttf')  ;
+}
+.l1 {
+    -fx-font-family: 'Comfortaa';
+    -fx-font-weight: bold;
+    -fx-font-size: 36px;
+}
+.l2 {
+    -fx-font-family: 'Comfortaa';
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+.l3 {
+    -fx-font-family: 'Comfortaa';
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.container {
+-fx-background-image: url("photos/signbackground.jpg");
+}

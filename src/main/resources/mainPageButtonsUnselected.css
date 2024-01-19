@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url('fonts/Comfortaa-VariableFont_wght.ttf')  ;
+}
+
+
+.button {
+    -fx-text-fill: black;
+    -fx-font-size: 20px;
+    -fx-font-family: 'Comfortaa';
+    -fx-background-color: white;
+}
+.button:hover {
+    -fx-text-fill: #300e80;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Comfortaa';
+    -fx-background-color: rgba(48,14,128,0.1);
+
+}
+

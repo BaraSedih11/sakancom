@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../../OwnerPage.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sakankom.AdminMainPageHandler">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="250.0" spacing="5.0" styleClass="sidebar" stylesheets="@../../../OwnerPage.css">
+         <children>
+            <VBox prefHeight="720.0" prefWidth="250.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="115.0" text="Sakancom" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="115.0" text="Admin" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" />
+                     </VBox.margin>
+                  </Label>
+                  <MFXButton fx:id="apartmentsBtn" buttonType="RAISED" layoutX="10.0" layoutY="390.0" onAction="#viewApartments" prefHeight="60.0" prefWidth="250.0" text="Apartments" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btns" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </MFXButton>
+                  <MFXButton fx:id="reservationsBtn" buttonType="RAISED" layoutX="10.0" layoutY="480.0" onAction="#viewReservations" prefHeight="60.0" prefWidth="250.0" text="Reservations" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btns" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </MFXButton>
+                  <MFXButton fx:id="btnLogout" buttonType="RAISED" layoutX="10.0" layoutY="339.0" onAction="#logoutBtnHandler" prefHeight="60.0" prefWidth="250.0" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btns" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets top="360.0" />
+                     </VBox.margin>
+                  </MFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <BorderPane layoutX="250.0" prefHeight="720.0" prefWidth="1030.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../../../OwnerPage.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="294.0">
+                     <children>
+                        <Label fx:id="name" prefHeight="60.0" prefWidth="152.0" text="My profile">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@../../../photos/user.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+         </top>
+         <left>
+            <AnchorPane prefHeight="660.0" prefWidth="1030.0" styleClass="content" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="981.0" layoutY="610.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../photos/flowers.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane fx:id="bigPane" prefHeight="597.0" prefWidth="1031.0">
+                     <children>
+                        <MFXScrollPane fx:id="page1" prefHeight="597.0" prefWidth="1031.0" style="-fx-background-color: transparent;">
+                           <content>
+                              <VBox fx:id="container" prefHeight="586.0" prefWidth="1014.0" />
+                           </content></MFXScrollPane>
+                     </children></AnchorPane>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

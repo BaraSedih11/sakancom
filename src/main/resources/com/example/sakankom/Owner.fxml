@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../../OwnerPage.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sakankom.OwnerHandler">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="250.0" spacing="5.0" styleClass="sidebar" stylesheets="@../../../OwnerPage.css">
+         <children>
+            <VBox prefHeight="720.0" prefWidth="250.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="226.0">
+                     <children>
+                        <Label prefHeight="60.0" prefWidth="115.0" text="Dashboard" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="26.0" prefWidth="250.0" />
+                  <Label layoutX="10.0" layoutY="30.0" prefHeight="30.0" prefWidth="165.0" text="Your Houses" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <MFXButton fx:id="btnMain" buttonType="RAISED" onAction="#mainBtnHandler" prefHeight="60.0" prefWidth="250.0" text="Houses" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="btns-icons">
+                           <image>
+                              <Image url="@../../../photos/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="btns" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </MFXButton>
+                  <MFXButton fx:id="btnResidences" buttonType="RAISED" layoutX="10.0" layoutY="126.0" onAction="#residencesBtnHandler" prefHeight="60.0" prefWidth="250.0" text="Residences" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="btns-icons">
+                           <image>
+                              <Image url="@../../../photos/apartment.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btns" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </MFXButton>
+                  <Separator prefWidth="200.0" />
+                  <Label layoutX="10.0" layoutY="240.0" prefHeight="30.0" prefWidth="165.0" text="Maintenance" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <MFXButton fx:id="btnAddHouse" buttonType="RAISED" layoutX="10.0" layoutY="390.0" onAction="#addHouseBtnHandler" prefHeight="60.0" prefWidth="250.0" text="Add House" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../photos/new.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="btns" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </MFXButton>
+                  <MFXButton fx:id="btnAddResidence" buttonType="RAISED" layoutX="10.0" layoutY="480.0" onAction="#addResidenceBtnHandler" prefHeight="60.0" prefWidth="250.0" text="Add Residence" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../photos/house.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="btns" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </MFXButton>
+                  <Pane prefHeight="213.0" prefWidth="250.0" />
+                  <MFXButton fx:id="btnLogout" buttonType="RAISED" layoutX="10.0" layoutY="339.0" onAction="#logoutBtnHandler" prefHeight="60.0" prefWidth="250.0" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../photos/arrow.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="btns" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </MFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <BorderPane layoutX="250.0" prefHeight="720.0" prefWidth="1030.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../../../OwnerPage.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="190.0">
+                     <children>
+                        <Label fx:id="ownerName" prefHeight="60.0" prefWidth="113.0" text="My profile">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@../../../photos/user.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+         </top>
+         <left>
+            <AnchorPane prefHeight="660.0" prefWidth="1030.0" styleClass="content" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="981.0" layoutY="610.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../photos/flowers.png" />
+                     </image>
+                  </ImageView>
+                  <VBox fx:id="show" layoutY="-2.0" prefHeight="662.0" prefWidth="1031.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="201.0" text="Recently Added">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Label>
+                        <MFXScrollPane prefHeight="170.0" prefWidth="300.0" styleClass="transparent">
+                           <content>
+                              <HBox fx:id="cardLayout" alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="990.0" spacing="20.0" styleClass="transparent" />
+                           </content>
+                        </MFXScrollPane>
+                        <Label layoutX="30.0" layoutY="30.0" prefHeight="35.0" prefWidth="242.0" text="All Houses Added">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Label>
+                        <MFXScrollPane layoutX="30.0" layoutY="75.0" prefHeight="341.0" prefWidth="983.0" styleClass="transparent">
+                           <content>
+                              <HBox fx:id="cardLayout1" alignment="CENTER_LEFT" prefHeight="522.0" prefWidth="990.0" spacing="20.0" styleClass="transparent">
+                                 <children>
+                                    <GridPane fx:id="houseContainer" prefHeight="100.0" prefWidth="117.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                    </GridPane>
+                                 </children>
+                              </HBox>
+                           </content>
+                        </MFXScrollPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

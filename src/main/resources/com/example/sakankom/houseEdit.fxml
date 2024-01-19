@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" spacing="15.0" styleClass="transparent" stylesheets="@../../../OwnerPage.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sakankom.HouseEditHandler">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="844.0" spacing="15.0">
+            <VBox.margin>
+                <Insets left="20.0" right="20.0" top="20.0" />
+            </VBox.margin>
+            <children>
+                <MFXTextField fx:id="houseID" floatingText="House ID" layoutX="470.0" layoutY="10.0" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+                <MFXTextField fx:id="bedroomsNumber" floatingText="bedrooms number" layoutX="10.0" layoutY="10.0" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+                <MFXTextField fx:id="residenceID" floatingText="Residence ID" layoutX="240.0" layoutY="10.0" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill></MFXTextField>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+            <children>
+                <MFXTextField fx:id="imageName" floatingText="Image Name" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+                <MFXTextField fx:id="floorNumber" floatingText="Floor Number" layoutX="10.0" layoutY="10.0" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+                <MFXTextField fx:id="flatNumber" floatingText="flat number" layoutX="240.0" layoutY="10.0" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+            </children>
+            <VBox.margin>
+                <Insets left="20.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="130.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+            <children>
+                <MFXTextField fx:id="bathroomsNumber" floatingText="bathrooms number" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+                <MFXTextField fx:id="balaconyNumber" floatingText="balcony number" layoutX="10.0" layoutY="10.0" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+                <MFXTextField fx:id="price" floatingText="price" layoutX="240.0" layoutY="10.0" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+            </children>
+            <VBox.margin>
+                <Insets left="20.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="230.0" prefHeight="100.0" prefWidth="757.0" spacing="15.0">
+            <children>
+                <MFXTextField fx:id="capacity" floatingText="capacity" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+                <MFXTextField fx:id="reservedCapacity" floatingText="reserved capacity" layoutX="10.0" layoutY="10.0" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+                <MFXTextField fx:id="genders" floatingText="genders" layoutX="240.0" layoutY="10.0" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+                <MFXTextField fx:id="services" floatingText="Services" layoutX="470.0" layoutY="10.0" prefHeight="108.0" prefWidth="215.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <textFill>
+                        <Color opacity="0.961603045463562" />
+                    </textFill>
+                </MFXTextField>
+            </children>
+            <VBox.margin>
+                <Insets left="20.0" right="20.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="330.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+            <children>
+            <Pane prefHeight="100.0" prefWidth="449.0" />
+                <MFXButton fx:id="btnUpdate" buttonType="RAISED" onAction="#updateBtnHandler" prefHeight="107.0" prefWidth="159.0" rippleColor="BLACK" text="Update" textAlignment="CENTER" textFill="#0d0000">
+                    <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                    </font>
+                </MFXButton>
+            </children>
+            <VBox.margin>
+                <Insets left="20.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>
