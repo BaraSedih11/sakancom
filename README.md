@@ -67,3 +67,7 @@ Contributions to Sakancom are welcome! If you'd like to contribute to the projec
 ## Contact
 For any inquiries or issues regarding the project, feel free to contact the project owner: BaraSedih11.
 
+
+## Demo Video
+[![Demo Video](https://github.com/BaraSedih11/sakancom/assets/98843912/1bc81ad0-753f-430d-b0b4-89a5fbca8dff)](https://drive.google.com/file/d/1jJqUb5xBTNFmOMvqG4Mi2awiKh5-L5Sg/view?usp=sharing)
+
