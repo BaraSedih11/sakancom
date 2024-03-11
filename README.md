@@ -1,4 +1,12 @@
-# Sakancom
+<div align=center>
+  <img src="https://github.com/BaraSedih11/sakancom/assets/98843912/3a6ff76c-5c49-43ef-9119-74c2cd47a467" width="400px" />
+  
+  <br />
+  
+  
+</div>
+
+<br />
 Sakancom is a desktop application aimed at providing users with a platform to browse, search, and list properties for buying, selling, or renting. This repository contains the source code for the project.
 
 ## Features
