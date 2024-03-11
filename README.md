@@ -2,8 +2,15 @@
   <img src="https://github.com/BaraSedih11/sakancom/assets/98843912/3a6ff76c-5c49-43ef-9119-74c2cd47a467" width="400px" />
   
   <br />
+  <br />
   
-  
+   ![GitHub repo size](https://img.shields.io/github/repo-size/BaraSedih11/sakancom) 
+   ![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/BaraSedih11/sakancom) 
+   ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/BaraSedih11/sakancom/main)
+   [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](https://github.com/BaraSedih/sakancom/releases/tag/v1.0.0)
+   [![Contributors](https://img.shields.io/github/contributors/BaraSedih11/sakancom)](https://github.com/BaraSedih11/sakancom/graphs/contributors)
+   ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/BaraSedih11/sakancom)
+
 </div>
 
 <br />
